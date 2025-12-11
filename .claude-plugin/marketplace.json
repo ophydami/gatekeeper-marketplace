@@ -1,0 +1,61 @@
+{
+  "name": "gatekeeper-marketplace",
+  "owner": {
+    "name": "Gboyega Ofi",
+    "email": "gboyega.ofi@gmail.com"
+  },
+  "metadata": {
+    "description": "App store compliance checker plugins for iOS, Android, and Chrome extensions. Scan your apps for rejection risks before submission.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "claude-ios-gatekeeper",
+      "source": {
+        "source": "github",
+        "repo": "ophydami/claude-ios-gatekeeper"
+      },
+      "description": "Scan iOS apps for Apple App Store rejection risks. Supports native Swift/Obj-C, React Native, Expo, Flutter, Capacitor, Cordova, Unity, and .NET MAUI.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gboyega Ofi"
+      },
+      "homepage": "https://github.com/ophydami/claude-ios-gatekeeper",
+      "license": "MIT",
+      "keywords": ["ios", "app-store", "apple", "compliance", "expo", "react-native", "flutter"],
+      "category": "mobile-development"
+    },
+    {
+      "name": "claude-android-gatekeeper",
+      "source": {
+        "source": "github",
+        "repo": "ophydami/claude-android-gatekeeper"
+      },
+      "description": "Scan Android apps for Google Play Store rejection risks. Supports native Kotlin/Java, React Native, Expo, Flutter, Capacitor, Cordova, Unity, and .NET MAUI.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gboyega Ofi"
+      },
+      "homepage": "https://github.com/ophydami/claude-android-gatekeeper",
+      "license": "MIT",
+      "keywords": ["android", "play-store", "google", "compliance", "expo", "react-native", "flutter"],
+      "category": "mobile-development"
+    },
+    {
+      "name": "claude-chrome-gatekeeper",
+      "source": {
+        "source": "github",
+        "repo": "ophydami/claude-chrome-gatekeeper"
+      },
+      "description": "Scan Chrome extensions for Chrome Web Store rejection risks. Supports Plasmo, WXT, CRXJS/Vite, vanilla JS, and framework-based extensions.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gboyega Ofi"
+      },
+      "homepage": "https://github.com/ophydami/claude-chrome-gatekeeper",
+      "license": "MIT",
+      "keywords": ["chrome", "extension", "web-store", "manifest-v3", "plasmo", "wxt"],
+      "category": "browser-extensions"
+    }
+  ]
+}
