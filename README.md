@@ -9,6 +9,7 @@ App store compliance checker plugins for Claude Code. Scan your apps and extensi
 | **claude-ios-gatekeeper** | iOS / App Store | Scan for Apple App Store rejection risks |
 | **claude-android-gatekeeper** | Android / Play Store | Scan for Google Play Store rejection risks |
 | **claude-chrome-gatekeeper** | Chrome / Web Store | Scan for Chrome Web Store rejection risks |
+| **claude-firefox-gatekeeper** | Firefox / AMO | Scan for Mozilla Add-ons rejection risks |
 
 ## Installation
 
@@ -21,10 +22,11 @@ App store compliance checker plugins for Claude Code. Scan your apps and extensi
 ### Step 2: Install plugins
 
 ```bash
-# Install all three
+# Install all four
 /plugin install claude-ios-gatekeeper@gatekeeper-marketplace
 /plugin install claude-android-gatekeeper@gatekeeper-marketplace
 /plugin install claude-chrome-gatekeeper@gatekeeper-marketplace
+/plugin install claude-firefox-gatekeeper@gatekeeper-marketplace
 
 # Or install just the ones you need
 /plugin install claude-ios-gatekeeper@gatekeeper-marketplace
@@ -51,6 +53,9 @@ Each plugin provides:
 
 # Check Chrome extension with Plasmo
 /chrome-gatekeeper:check-framework plasmo
+
+# Scan Firefox extension for AMO compliance
+/firefox-gatekeeper:scan
 ```
 
 ## Supported Frameworks
@@ -83,6 +88,15 @@ Each plugin provides:
 - React extensions
 - Vue extensions
 
+### Firefox Gatekeeper
+- Vanilla JS/TS
+- Plasmo
+- WXT
+- CRXJS/Vite
+- React extensions
+- Vue extensions
+- Svelte extensions
+
 ## What Gets Checked
 
 ### iOS
@@ -93,7 +107,7 @@ Each plugin provides:
 - Entitlements configuration
 
 ### Android
-- Target SDK version (API 34+)
+- Target SDK version (API 35 for new apps, Aug 2025)
 - Permission declarations and justifications
 - Data Safety section readiness
 - Play Store policy compliance
@@ -105,6 +119,23 @@ Each plugin provides:
 - Content Security Policy
 - Single purpose policy
 - Remote code restrictions
+
+### Firefox (Updated Nov 2025)
+- data_collection_permissions manifest requirement
+- browser_specific_settings.gecko configuration
+- No remote code execution
+- Source code reviewability
+- Private browsing data handling
+- User consent mechanisms
+
+## Policy Sources
+
+All plugins are kept up-to-date with the latest platform policies:
+
+- **iOS**: [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)
+- **Android**: [Google Play Policy Center](https://support.google.com/googleplay/android-developer/answer/11926878)
+- **Chrome**: [Chrome Web Store Policies](https://developer.chrome.com/docs/webstore/program-policies/)
+- **Firefox**: [Mozilla Add-on Policies](https://extensionworkshop.com/documentation/publish/add-on-policies/)
 
 ## License
 

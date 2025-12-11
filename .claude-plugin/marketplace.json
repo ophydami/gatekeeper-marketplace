@@ -5,8 +5,8 @@
     "email": "gboyega.ofi@gmail.com"
   },
   "metadata": {
-    "description": "App store compliance checker plugins for iOS, Android, and Chrome extensions. Scan your apps for rejection risks before submission.",
-    "version": "1.0.0"
+    "description": "App store compliance checker plugins for iOS, Android, Chrome, and Firefox. Scan your apps and extensions for rejection risks before submission.",
+    "version": "1.1.0"
   },
   "plugins": [
     {
@@ -55,6 +55,22 @@
       "homepage": "https://github.com/ophydami/claude-chrome-gatekeeper",
       "license": "MIT",
       "keywords": ["chrome", "extension", "web-store", "manifest-v3", "plasmo", "wxt"],
+      "category": "browser-extensions"
+    },
+    {
+      "name": "claude-firefox-gatekeeper",
+      "source": {
+        "source": "github",
+        "repo": "ophydami/claude-firefox-gatekeeper"
+      },
+      "description": "Scan Firefox extensions for Mozilla Add-ons (AMO) rejection risks. Supports Plasmo, WXT, CRXJS/Vite, vanilla JS, and framework-based extensions. Updated for November 2025 data collection requirements.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Gboyega Ofi"
+      },
+      "homepage": "https://github.com/ophydami/claude-firefox-gatekeeper",
+      "license": "MIT",
+      "keywords": ["firefox", "mozilla", "amo", "add-ons", "extension", "manifest-v2", "plasmo", "wxt"],
       "category": "browser-extensions"
     }
   ]
